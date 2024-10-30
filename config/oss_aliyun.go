@@ -7,4 +7,6 @@ type AliyunOSS struct {
 	BucketName      string `mapstructure:"bucket-name" json:"bucket-name" yaml:"bucket-name"`
 	BucketUrl       string `mapstructure:"bucket-url" json:"bucket-url" yaml:"bucket-url"`
 	BasePath        string `mapstructure:"base-path" json:"base-path" yaml:"base-path"`
+	ExpireTime      int64  `mapstructure:"expire-time" json:"expire-time" yaml:"expire-time"`
+	CallbackUrl     string `mapstructure:"callback-url" json:"callback-url" yaml:"callback-url"`
 }
